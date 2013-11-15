@@ -51,43 +51,80 @@
 							Reflexionar
 						</p>
 						
-						<img width="400px" src="reflexion.png">
+						<img width="50%" src="images/reflexion.png">
 					</div>
+					<aside class="notes">
+						Reflexionar acerca de los dispositivos de interacción que tenemos actualmente,
+						por qué funcionan "bien" y por qué no han cambiado en tanto tiempo.
+						
+						Ahora aparecen en escena muchas nuevas formas de interacción, muchas relacionadas
+						con detección de movimiento, reconocimiento de imágenes y voz, y cosas similares.
+						Sin embargo, en general estas nuevas formas no impactan ni se masifican de la misma forma
+						que lo hicieron sus predecesores.
+						
+						La idea es pensar un poco acerca todo esto y tratar de sacar alguna conclusión.
+						
+						
+					</aside>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Interacción Tradicional</h2>
+						<h3 class="fragment">(Actual?)</h3>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h2>Teclado</h2>
+						<div class="fragment">
+							<div style="padding-right: 20px; border-right: 1px solid; display: inline-block">
+								<img width="280" src="images/teclado.png">
+							</div>
+							<div style="margin-top: 5px; padding-top:10px; padding-left:20px; display: inline-block; vertical-align: top;">
+								<ul>
+									<li>Preciso</li>
+									<li>Permite muchas combinaciones</li>
+									<li>Ideal para ingresar texto</li>
+									<li>Es instantáneo</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="fragment" style="margin-top:30px;" >
+							<h2 style="vertical-align:top; width: 280px;display:inline-block">Pero... </h2>
+							<ul style="color: #EE0000">
+								<li>Digital</li>
+								<li>Mucho aprendizaje</li>
+							</ul>
+						</div>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Mouse</h2>
+						<div class="fragment">
+							<div style="padding-right: 20px; border-right: 1px solid; display: inline-block">
+								<img width="280" src="images/mouse.png">
+							</div>
+							<div style="margin-top: 5px; padding-top:10px; padding-left:20px; display: inline-block; vertical-align: top;">
+								<ul>
+									<li>Analógico en dos ejes</li>
+									<li>Simple</li>
+									<li>Una mano</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="fragment" style="margin-top:30px">
+							<h2 style="vertical-align:top; width: 280px;display:inline-block">Pero... </h2>
+							<ul style="color: #EE0000">
+								<li>No tan preciso</li>
+								<li>Pocas combinaciones</li>
+								<li>Una mano</li>
+							</ul>
+						</div>
 					</section>
 				</section>
 
-				<section>
+				<section>	
 					<h2>Slides</h2>
 					<p>
 						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
@@ -358,12 +395,19 @@ function linkify( selector ) {
 				progress: true,
 				history: true,
 				center: true,
+				
+				leap: {
+					naturalSwipe   : false,    // Invert swipe gestures
+					pointerOpacity : 0.0,      // Set pointer opacity to 0.5
+					pointerColor   : '#d80000' // Red pointer
+				},
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
+					{ src: 'plugin/leap/leap.js', async: true },
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -377,3 +421,4 @@ function linkify( selector ) {
 
 	</body>
 </html>
+
