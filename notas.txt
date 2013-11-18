@@ -1,38 +1,38 @@
-Reflexionar acerca de los dispositivos de interacción que tenemos actualmente,
-por qué funcionan "bien" y por qué no han cambiado en tanto tiempo.
+Reflexionar acerca de los dispositivos de interacción que tenemos actualmente, por qué funcionan "bien" y por qué no han cambiado en tanto tiempo.
 
-Ahora aparecen en escena muchas nuevas formas de interacción, muchas relacionadas
-con detección de movimiento, reconocimiento de imágenes y voz, y cosas similares.
-Sin embargo, en general estas nuevas formas no impactan ni se masifican de la misma forma
-que lo hicieron sus predecesores.
+Ahora aparecen en escena muchas nuevas formas de interacción, muchas relacionadas con detección de movimiento,  reconocimiento de imágenes y voz, y cosas similares.
+Sin embargo, en general estas nuevas formas no impactan ni se masifican de la misma forma que lo hicieron sus predecesores.
 
 La idea es pensar un poco acerca todo esto y tratar de sacar alguna conclusión.
 
+------------------
+
 ¿Qué es el Leap Motion? Este aparato que se ve en los slides
 y este que tengo aquí. Para describirlo de una forma funcional,
-uno lo conecta su PC, y se comporta como un dispositivo de entrada
-y salida que detecta el movimiento de tus manos en un espacio tri-
-dimensional por sobre el aparato.
+uno lo conecta su PC, y se comporta como un dispositivo de entrada y salida que detecta el movimiento de tus manos en un espacio tri-dimensional por sobre el aparato.
 
-Eso le permite al aparato ver y ubicar en el espacio las manos de uno.
-Detrás de esto hay también un software relativamente complejo que a partir
-de estas visualizaciones obtiene lo que se llama un point cloud, y con ese
-point cloud interpreta la posición y gestos de las manos. Todo esto lo hace
+---------------------------
+
+Eso le permite al aparato ver y ubicar en el espacio las manos de uno. Detrás de esto hay también un software relativamente complejo que a partir de estas visualizaciones obtiene lo que se llama un point cloud, y con ese point cloud interpreta la posición y gestos de las manos. Todo esto lo hace
 con un delay pequeño y muy buena precisión.
+
+---------------------------
 
 Juegos
 - Visualizador: Muy lindo, muy impresionante.
 - Corel Draw
 - Diagnostics visualization
 
-Mi plugin de chrome
-
 Reveal JS
+
+-----------------
 
 Acerca de la API
 Por el momento, sólo estoy bien familiarizado con la API de JS.
 
 Se maneja con Frames. El Leap Motion te tira datos a cierta cantidad de FPS.
+
+------------------------
 
 Cada Frame tiene información de:
 - Gestos
@@ -42,18 +42,48 @@ Cada Frame tiene información de:
 
 También proporciona métodos para interpretar gestos que se hacen con las dos manos, como rotar y escalar.
 
+-------------------------
+
 Ejemplos de Código:
 Vault for Chrome
 - Comentar un poco las decisiones de diseño que se fueron tomando y por qué
-- - La idea inicial era hacer un plugin de chrome que sirva para hacer
-algunas de las tareas comunes que uno hace con chrome de forma copada.
+- - La idea inicial era hacer un plugin de chrome que sirva para hacer algunas de las tareas comunes que uno hace con chrome de forma copada.
 
 Las premisas de las que se partió eran: Movimientos no ambiguos y que requieran poca energía.
 
 - - Se optó por el scroll a una mano por orientación porque requiere poca energía, y no es ambiguo.
  Otros tipos de scrolls no son tan así.
-- - Los gestos de navigate back and forth y para cambiar de tab que son un poco
-ambiguos pero requieren poca energía.
+- - Los gestos de navigate back and forth y para cambiar de tab que son un poco ambiguos pero requieren poca energía.
 - - Mostrar un poquito del código. Hablar de la potencialidad que hay para implementar frameworks (si hay tiempo)
-- - -  Hablar de los posibles loops que existen y de cómo quizás estos
-se podrían abstaer a aplicaciones más concretas (orientadas a eventos o cosas por el estilo)
+- - -  Hablar de los posibles loops que existen y de cómo quizás estos se podrían abstaer a aplicaciones más concretas (orientadas a eventos o cosas por el estilo)
+
+---------------------
+
+Leap Motion Theremin
+Introducir el ejemplo diciendo que lo anterior (y en general el software que vi hasta ahora) parece orientarse a hacer tareas que se pueden hacer bastante bien con teclado y mouse. Sin embargo hay (o debe haber) tareas que sea mejor hacerlas con un control del estilo Leap Motion.
+
+Videojuegos es un buen ejemplo, pero no estamos limitados a eso:
+
+Introducir la aplicación.
+
+- Mostrar ejemplo inicial sin control de volumen.
+Mostrar un poco el código. Nada del otro mundo. Hablar de cómo se mapea un espacio absoluto
+a uno relativo, para así poder traducirlo al espacio de frecuencias.
+
+Hablar de cuáles son las distintas alternativas que uno tiene para controlar volúmen
+
+Hablar de calibración. Retomar la idea de que hacen falta frameworks, hacen falta
+modelos, hacen falta convenciones y standards.
+
+Hablar un poquito
+
+- Agregar control de volúmen. Jugar un poquito.
+- Mostrar Snap. Hablar de la posibilidad de implementar un Snap a escalas
+- Mostrar a dos voces. Jugar un poco
+
+
+- Conclusiones
+- - Futuro del artefacto
+- - Ventajas y desventajas (revisited)
+- - ¿Es "útil"?
+- - ¿Qué onda los developers?

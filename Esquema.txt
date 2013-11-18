@@ -1,0 +1,58 @@
+Estructuración de la charla:
+- Interacción clásica
+- - Mouse
+- - Teclado
+
+- Intro a Leap Motion
+- - ¿Qué es?
+- - ¿Cómo funciona?
+
+- Ejemplos Leap Motion
+- - AirSpace
+- - Visualizador
+- - - Aprovechar para hablar un poco de las limitaciones del aparato (área de visión, tiempo de reconocimiento de manos, posición de manos obligatoria)
+- - Corel Draw
+- - Touchless
+- - ¿GameWAVE?
+
+- Más a fondo:
+- - ¿Cuáles son sus competidores?
+- - ¿Por qué creo que es importante?
+- - - Precio
+- - - Portabilidad
+- - - Precisión
+- - - "Ancho de Banda"
+- - - Canales simultáneos
+- - - Complemento a teclado y mouse
+- - Ventajas y desventajas (VS Mouse, teclado)
+
+- SDK
+- - Mostrar un poquito la API
+- - ¿Qué es lo que viene hecho, con qué se puede jugar?
+- - - Gestos
+- - - "Canales" (Orientación, posición, dedos, apertura)
+- - ¿Qué es lo que NO viene que sería interesante tener?
+- - - Point and click
+- - - Areas
+- - - Estabilización/calibración
+- - - Otros...
+
+- Ejemplos de Código
+- - Vault for Chrome
+- - - Comentar un poco las decisiones de diseño que se fueron tomando y por qué
+- - - - Por qué el gesto del scroll
+- - - - Por qué la selección de gestos para cambiar tab y navigate back and forth.
+- - - Mostrar un poquito del código. Hablar de la potencialidad que hay para implementar frameworks.
+- - - - Hablar de los posibles loops que existen y de cómo quizás estos se podrían abstaer a aplicaciones más concretas (orientadas a eventos o cosas por el estilo)
+- - Theremin
+- - - Comentar el objetivo del ejemplo y del ejercicio
+- - - Mostrar el theremin básico (sin control de volumen, sin áreas)
+- - - Agregar control de volumen: Contrastar con theremin real
+- - - Agregar áreas de notas
+- - - Perdimos el vibrato. Agregar vibrato usando la orientación de la mano.
+
+- Conclusiones
+- - Futuro del artefacto
+- - Ventajas y desventajas (revisited)
+- - ¿Es "útil"?
+- - ¿Qué onda los developers?
